@@ -207,5 +207,3 @@ TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/configs/power/mode-ext.cpp
 
 # Inherit the proprietary files
 -include vendor/nokia/NB1/BoardConfigVendor.mk
-
-
