@@ -210,6 +210,12 @@ ro.soc.model=MSM8998
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
 
+# Vulkan
+ro.hwui.use_vulkan=true
+graphics.gpu.profiler.support=true
+renderthread.skia.reduceopstasksplitting=true
+debug.hwui.renderer=skiavk
+
 # Zram-writeback
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
