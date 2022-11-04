@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_NB1.mk
+    $(LOCAL_DIR)/cherish_NB1.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_NB1-user \
-    evolution_NB1-userdebug \
-    evolution_NB1-eng
+    cherish_NB1-user \
+    cherish_NB1-userdebug \
+    cherish_NB1-eng
