@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@megafire91 
-log1cs
-/
-android_device_nokia_NB1
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-android_device_nokia_NB1/overlay/frameworks/base/core/res/res/values/config.xml
-@vware
-vware NB1: Drop config_setColorTransformAccelerated
-…
-Latest commit ae45601 2 days ago
- History
- 25 contributors
-@GPUCode@etylix@rpius@kubersharma001@kdrag0n@zqm64@log1cs@Terminator-J@subhajeetmuhuri@luk1337@olvaffe@karthik990
-619 lines (516 sloc)  30.5 KB
-
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
@@ -132,13 +103,6 @@ Latest commit ae45601 2 days ago
          * The device must be provisioned with HDCP keys (for protected content).
     -->
      <bool name="config_enableWifiDisplay">true</bool>
-
-     <!-- wifi rssi threshold fix so that we don't get disconnects -->
-    <integer translatable="false" name="config_networkAvoidBadWifi">0</integer>
-    <integer translatable="false" name="config_wifi_framework_wifi_score_bad_rssi_threshold_24GHz">-100</integer>
-    <integer translatable="false" name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-100</integer>
-    <integer translatable="false" name="config_wifi_framework_wifi_score_low_rssi_threshold_24GHz">-100</integer>
-    <integer translatable="false" name="config_wifi_framework_wifi_score_low_rssi_threshold_5GHz">-100</integer>
 
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
@@ -652,21 +616,11 @@ Latest commit ae45601 2 days ago
          Choices are: FULL, NORMAL, OFF. -->
     <string name="db_wal_sync_mode" translatable="false">OFF</string>
 
-</resources>
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-android_device_nokia_NB1/overlay/frameworks/base/core/res/res/values at evolution · log1cs/android_device_nokia_NB1android_device_nokia_NB1/config.xml at evolution · log1cs/android_device_nokia_NB1
+    <!-- disable wifi rssi threshold for no disconnection --> 
+    <integer translatable="false" name="config_networkAvoidBadWifi">0</integer>
+    <integer translatable="false" name="config_wifi_framework_wifi_score_bad_rssi_threshold_24GHz">-100</integer>
+    <integer translatable="false" name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-100</integer>
+    <integer translatable="false" name="config_wifi_framework_wifi_score_low_rssi_threshold_24GHz">-100</integer>
+    <integer translatable="false" name="config_wifi_framework_wifi_score_low_rssi_threshold_5GHz">-100</integer>
 
-    
+</resources>
