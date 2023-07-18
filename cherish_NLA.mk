@@ -12,12 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 PRODUCT_SHIPPING_API_LEVEL := 27
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from NLA device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_NAME := lineage_NLA
+PRODUCT_NAME := cherish_NLA
 PRODUCT_DEVICE := NLA
 PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_BRAND := Nokia
